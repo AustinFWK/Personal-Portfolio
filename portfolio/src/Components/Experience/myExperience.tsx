@@ -1,4 +1,5 @@
 import DevYoungstown from "./devYoungstown";
+import SWEYSU from "./sweYSU";
 import UndergraduateResearch from "./undergradResearch";
 
 export default function MyExperience() {
@@ -6,6 +7,7 @@ export default function MyExperience() {
     <div>
       <h1>Experience</h1>
       <DevYoungstown />
+      <SWEYSU />
       <UndergraduateResearch />
     </div>
   );

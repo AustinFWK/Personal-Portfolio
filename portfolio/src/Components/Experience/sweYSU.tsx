@@ -3,29 +3,26 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
-export default function DevYoungstown() {
+export default function SWEYSU() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
         image="/static/images/cards/contemplative-reptile.jpg"
-        alt="devyoungstown logo"
+        alt="ysu logo"
       />
       <CardContent>
         <Typography gutterBottom variant="h4">
-          DevYoungstown
+          Youngstown State University
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
-          Full Stack Software Engineer
+          Student Software Engineer
         </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          I am currently a full stack Software Engineer at{" "}
-          <a href="https://www.youngstown.dev/" target="_blank">
-            DevYoungstown
-          </a>{" "}
-          where I specialize in developing and maintaining Web App MVPs for our
-          clients!
+          I am a Student Software Engineer at Youngstown State University where
+          I focus on utilizing HTML, CSS, and JavaScript to maintain the 100s of
+          YSU websites!
         </Typography>
       </CardContent>
     </Card>
