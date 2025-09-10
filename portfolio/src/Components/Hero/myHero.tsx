@@ -9,6 +9,9 @@ export default function MyHero() {
         Hi! I'm Austin Winger-Kailer, a full stack web developer with a passion
         for innovation and solving problems through the means of software.
       </p>
+      <button>LinkedIn</button>
+      <button>GitHub</button>
+      <button>Email</button>
     </div>
   );
 }
