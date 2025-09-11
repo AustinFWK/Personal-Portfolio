@@ -19,6 +19,9 @@ export default function DevYoungstown() {
         <Typography gutterBottom variant="h5" component="div">
           Full Stack Software Engineer
         </Typography>
+        <Typography gutterBottom variant="h6" component="div">
+          2024-Present
+        </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
           I am currently a full stack Software Engineer at{" "}
           <a href="https://www.youngstown.dev/" target="_blank">

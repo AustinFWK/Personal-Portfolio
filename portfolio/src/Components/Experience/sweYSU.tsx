@@ -19,6 +19,9 @@ export default function SWEYSU() {
         <Typography gutterBottom variant="h5" component="div">
           Student Software Engineer
         </Typography>
+        <Typography gutterBottom variant="h6" component="div">
+          2024-Present
+        </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
           I am a Student Software Engineer at Youngstown State University where
           I focus on utilizing HTML, CSS, and JavaScript to maintain the 100s of

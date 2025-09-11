@@ -16,6 +16,9 @@ export default function UndergraduateResearch() {
         <Typography gutterBottom variant="h5" component="div">
           Undergraduate Research{" "}
         </Typography>
+        <Typography gutterBottom variant="h6" component="div">
+          2024-2025
+        </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
           I was fortunate to be part of my universities undergraduate Data
           Science reseach program, where we teamed up with executives from
