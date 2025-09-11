@@ -21,6 +21,9 @@ export default function DiscordBot() {
           patchnotes page and posts them in a designated discord channel
           whenever a new patch is released.
         </Typography>
+        <Typography variant="h6" sx={{ color: "text.primary" }}>
+          Tech Stack: Python, Discord.py, BeautifulSoup, Selenium
+        </Typography>
       </CardContent>
     </Card>
   );

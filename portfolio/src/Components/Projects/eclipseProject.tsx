@@ -22,6 +22,9 @@ export default function EclipseProject() {
           location, and provided routes to cities based in Ohio that had the
           best viewing experience for the 2024 solar eclipse.
         </Typography>
+        <Typography variant="h6" sx={{ color: "text.primary" }}>
+          Tech Stack: React(JS), Node.js, Python, Flask, GoogleMaps API
+        </Typography>
       </CardContent>
     </Card>
   );

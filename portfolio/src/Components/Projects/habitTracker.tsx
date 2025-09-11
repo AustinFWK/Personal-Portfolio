@@ -25,6 +25,9 @@ export default function EclipseProject() {
           a calendar system that allows for users to view past logs and see how
           their habits have affected their mood over time.
         </Typography>
+        <Typography variant="h6" sx={{ color: "text.primary" }}>
+          Tech Stack: React, TypeScript, Node.js, Python, FastAPI, SQLite
+        </Typography>
       </CardContent>
     </Card>
   );
