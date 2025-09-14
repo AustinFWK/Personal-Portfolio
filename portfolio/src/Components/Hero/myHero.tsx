@@ -1,6 +1,6 @@
 export default function MyHero() {
   return (
-    <div>
+    <div id="hero">
       <h1>Welcome to My Portfolio</h1>
       <div>
         <img src="placeholder.jpg" alt="Hero Image" />

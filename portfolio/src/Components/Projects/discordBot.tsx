@@ -24,6 +24,9 @@ export default function DiscordBot() {
         <Typography variant="h6" sx={{ color: "text.primary" }}>
           Tech Stack: Python, Discord.py, BeautifulSoup, Selenium
         </Typography>
+        <Typography variant="h6" sx={{ color: "text.primary" }}>
+          Placeholder for github link
+        </Typography>
       </CardContent>
     </Card>
   );

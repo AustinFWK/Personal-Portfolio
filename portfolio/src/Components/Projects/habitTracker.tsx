@@ -28,6 +28,9 @@ export default function EclipseProject() {
         <Typography variant="h6" sx={{ color: "text.primary" }}>
           Tech Stack: React, TypeScript, Node.js, Python, FastAPI, SQLite
         </Typography>
+        <Typography variant="h6" sx={{ color: "text.primary" }}>
+          Placeholder for github link
+        </Typography>
       </CardContent>
     </Card>
   );
