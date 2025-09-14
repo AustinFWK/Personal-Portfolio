@@ -1,3 +1,7 @@
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+
 export default function MyHero() {
   return (
     <div id="hero">
@@ -9,9 +13,20 @@ export default function MyHero() {
         Hi! I'm Austin Winger-Kailer, a full stack web developer with a passion
         for innovation and solving problems through the means of software.
       </p>
-      <button>LinkedIn</button>
-      <button>GitHub</button>
-      <button>Email</button>
+
+      <a
+        href="https://www.linkedin.com/in/austin-winger-kailer-761170295/"
+        target="_blank"
+      >
+        <LinkedInIcon />
+      </a>
+
+      <a href="https://github.com/AustinFWK" target="_blank">
+        <GitHubIcon />
+      </a>
+      <a href="mailto:austin.wingerkailer0701@gmail.com" target="_blank">
+        <EmailIcon />
+      </a>
     </div>
   );
 }
