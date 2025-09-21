@@ -2,7 +2,7 @@ export default function NavBar() {
   return (
     <nav>
       <div>
-        <div>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <a href="#hero">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
