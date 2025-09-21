@@ -24,7 +24,7 @@ export default function MyHero() {
       <a href="https://github.com/AustinFWK" target="_blank">
         <GitHubIcon />
       </a>
-      <a href="mailto:austin.wingerkailer0701@gmail.com" target="_blank">
+      <a href="mailto:austin.wingerkailer0701@gmail.com">
         <EmailIcon />
       </a>
     </div>
