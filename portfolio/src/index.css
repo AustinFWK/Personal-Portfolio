@@ -64,6 +64,13 @@ button:focus-visible {
   justify-items: center;
 }
 
+.socials-layout {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
