@@ -14,7 +14,7 @@ export default function MyHero() {
       }}
     >
       <h1>Welcome to My Portfolio</h1>
-      <img src="placeholder.jpg" alt="Hero Image" />
+      <img src="/headshot.jpg" alt="Hero Image" />
       <p>
         Hi! I'm Austin Winger-Kailer, a full stack web developer with a passion
         for innovation and solving problems through the means of software.
