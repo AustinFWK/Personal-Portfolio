@@ -4,11 +4,13 @@ import UndergraduateResearch from "./undergradResearch";
 
 export default function MyExperience() {
   return (
-    <div id="experience" className="card-layout">
-      <h1>Experience</h1>
-      <DevYoungstown />
-      <SWEYSU />
-      <UndergraduateResearch />
+    <div id="experience">
+      <h1 style={{ textAlign: "center" }}>Experience</h1>
+      <div className="card-layout">
+        <DevYoungstown />
+        <SWEYSU />
+        <UndergraduateResearch />
+      </div>
     </div>
   );
 }

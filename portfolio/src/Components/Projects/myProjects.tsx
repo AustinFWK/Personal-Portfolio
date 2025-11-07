@@ -4,11 +4,13 @@ import HabitTracker from "./habitTracker";
 
 export default function MyProjects() {
   return (
-    <div id="projects" className="card-layout">
-      <h1>Projects</h1>
-      <HabitTracker />
-      <EclipseProject />
-      <DiscordBot />
+    <div id="projects">
+      <h1 style={{ textAlign: "center" }}>Projects</h1>
+      <div className="card-layout">
+        <HabitTracker />
+        <EclipseProject />
+        <DiscordBot />
+      </div>
     </div>
   );
 }

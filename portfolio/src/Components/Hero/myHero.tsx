@@ -19,7 +19,9 @@ export default function MyHero() {
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
           gap: "2rem",
-          padding: "2rem",
+          padding: "1rem",
+          alignItems: "center",
+          justifyItems: "center",
         }}
       >
         <img
