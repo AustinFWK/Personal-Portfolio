@@ -14,11 +14,25 @@ export default function MyHero() {
       }}
     >
       <h1>Welcome to My Portfolio</h1>
-      <img src="/headshot.jpg" alt="Hero Image" />
-      <p>
-        Hi! I'm Austin Winger-Kailer, a full stack web developer with a passion
-        for innovation and solving problems through the means of software.
-      </p>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gap: "2rem",
+          padding: "2rem",
+        }}
+      >
+        <img
+          src="/headshot.jpg"
+          alt="Hero Image"
+          className="responsive-image"
+        />
+        <p>
+          Hi! I'm Austin Winger-Kailer, a full stack web developer with a
+          passion for innovation and solving problems through the means of
+          software.
+        </p>
+      </div>
       <a
         href="https://www.linkedin.com/in/austin-winger-kailer-761170295/"
         target="_blank"
