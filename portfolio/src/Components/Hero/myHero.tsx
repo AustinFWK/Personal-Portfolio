@@ -14,26 +14,34 @@ export default function MyHero() {
       <h1>Welcome to My Portfolio</h1>
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          display: "flex",
+          flexDirection: "row",
           gap: "2rem",
-          padding: "1rem",
+          padding: ".5rem",
           alignItems: "center",
-          justifyItems: "center",
+          justifyContent: "center",
         }}
       >
-        <img
-          src="/headshot.jpg"
-          alt="Hero Image"
-          className="responsive-image"
-        />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          <img
+            src="/headshot.jpg"
+            alt="Hero Image"
+            className="responsive-image"
+          />
+          <Socials />
+        </div>
         <p>
-          Hi! I'm Austin Winger-Kailer, a full stack web developer with a
-          passion for innovation and solving problems through the means of
-          software.
+          Austin Winger-Kailer
+          <br /> Full Stack Web Developer <br /> Full time coffee shop enjoyer
         </p>
       </div>
-      <Socials />
     </div>
   );
 }
