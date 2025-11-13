@@ -2,6 +2,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import { LatestCommit } from "../../Utils/getLastCommit";
 
 export default function EclipseProject() {
   return (
@@ -28,9 +29,7 @@ export default function EclipseProject() {
         <Typography variant="h6" sx={{ color: "text.primary" }}>
           Tech Stack: React, TypeScript, Node.js, Python, FastAPI, SQLite
         </Typography>
-        <Typography variant="h6" sx={{ color: "text.primary" }}>
-          Placeholder for github link
-        </Typography>
+        <LatestCommit username="AustinFWK" repo="HabitTracker" />
       </CardContent>
     </Card>
   );
