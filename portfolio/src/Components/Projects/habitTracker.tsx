@@ -3,6 +3,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { LatestCommit } from "../../Utils/getLastCommit";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { IconButton } from "@mui/material";
 
 export default function EclipseProject() {
   return (
@@ -30,6 +32,15 @@ export default function EclipseProject() {
           Tech Stack: React, TypeScript, Node.js, Python, FastAPI, SQLite
         </Typography>
         <LatestCommit username="AustinFWK" repo="HabitTracker" />
+        <IconButton
+          component="a"
+          href="https://github.com/AustinFWK/HabitTracker"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <GitHubIcon />
+        </IconButton>
       </CardContent>
     </Card>
   );
