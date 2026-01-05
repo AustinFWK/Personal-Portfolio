@@ -20,13 +20,13 @@ export default function HabitTracker() {
             Habit Tracker (WIP)
           </Typography>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            I'm currently developing a web app that will allow users to insert
-            their daily habits, which will provide insight as to why they may be
-            feeling a certain way. The app will also provide positive habits
-            that the user can work on developing within themselves, as well as
-            research driven instructions on how to develop these habits. There
-            will also be a calendar system that allows for users to view past
-            logs and see how their habits have affected their mood over time.
+            I developed a habit tracking web application that allows users to
+            enter a journal entry about what they did during the day and also
+            log how their mood was that day (very bad, neutral, very good,
+            etc.). The user's entry is then sent to the backend where I use an
+            anthropic AI model to analyze the entry and provide feedback on the
+            user's habits and ways they can improve their habits through small
+            daily changes.
           </Typography>
           <Typography variant="h6" sx={{ color: "text.primary" }}>
             Tech Stack: React, TypeScript, Node.js, Python, FastAPI, SQLite
