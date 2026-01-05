@@ -1,22 +1,10 @@
-import {
-  IconButton,
-  Card,
-  CardMedia,
-  Typography,
-  CardContent,
-  Box,
-} from "@mui/material";
+import { IconButton, Card, Typography, CardContent, Box } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
 
 export default function EclipseProject() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="eclipse photo"
-      />
       <CardContent>
         <Box
           sx={{
@@ -26,6 +14,7 @@ export default function EclipseProject() {
             alignItems: "center",
           }}
         >
+          <Brightness4Icon />
           <Typography gutterBottom variant="h5" component="div">
             Ohio Eclipse Web App
           </Typography>

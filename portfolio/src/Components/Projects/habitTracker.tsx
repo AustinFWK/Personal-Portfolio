@@ -1,23 +1,11 @@
-import {
-  IconButton,
-  Card,
-  CardMedia,
-  Typography,
-  CardContent,
-  Box,
-} from "@mui/material";
+import { IconButton, Card, Typography, CardContent, Box } from "@mui/material";
 import { LatestCommit } from "../../Utils/getLastCommit";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import PsychologyIcon from "@mui/icons-material/Psychology";
 
 export default function HabitTracker() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="brain logo"
-      />
       <CardContent>
         <Box
           sx={{
@@ -27,6 +15,7 @@ export default function HabitTracker() {
             alignItems: "center",
           }}
         >
+          <PsychologyIcon />
           <Typography gutterBottom variant="h5" component="div">
             Habit Tracker (WIP)
           </Typography>

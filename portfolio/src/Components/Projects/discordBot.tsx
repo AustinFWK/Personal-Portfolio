@@ -1,22 +1,10 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {
-  IconButton,
-  Card,
-  CardMedia,
-  Typography,
-  CardContent,
-  Box,
-} from "@mui/material";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import { IconButton, Card, Typography, CardContent, Box } from "@mui/material";
 
 export default function DiscordBot() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="valorant logo"
-      />
       <CardContent>
         <Box
           sx={{
@@ -26,6 +14,7 @@ export default function DiscordBot() {
             alignItems: "center",
           }}
         >
+          <SmartToyIcon />
           <Typography gutterBottom variant="h5" component="div">
             Valorant Patchnotes Bot
           </Typography>
