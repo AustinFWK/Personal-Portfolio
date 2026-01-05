@@ -2,6 +2,8 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { IconButton } from "@mui/material";
 
 export default function DiscordBot() {
   return (
@@ -24,9 +26,15 @@ export default function DiscordBot() {
         <Typography variant="h6" sx={{ color: "text.primary" }}>
           Tech Stack: Python, Discord.py, BeautifulSoup, Selenium
         </Typography>
-        <Typography variant="h6" sx={{ color: "text.primary" }}>
-          Placeholder for github link
-        </Typography>
+        <IconButton
+          component="a"
+          href="https://github.com/AustinFWK/valorant-news-bot"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <GitHubIcon />
+        </IconButton>
       </CardContent>
     </Card>
   );
