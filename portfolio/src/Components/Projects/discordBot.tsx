@@ -1,9 +1,12 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { IconButton } from "@mui/material";
+import {
+  IconButton,
+  Card,
+  CardMedia,
+  Typography,
+  CardContent,
+  Box,
+} from "@mui/material";
 
 export default function DiscordBot() {
   return (
@@ -15,26 +18,35 @@ export default function DiscordBot() {
         alt="valorant logo"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Valorant Patchnotes Bot
-        </Typography>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          I developed a discord bot that automatically scrapes the Valorant
-          patchnotes page and posts them in a designated discord channel
-          whenever a new patch is released.
-        </Typography>
-        <Typography variant="h6" sx={{ color: "text.primary" }}>
-          Tech Stack: Python, Discord.py, BeautifulSoup, Selenium
-        </Typography>
-        <IconButton
-          component="a"
-          href="https://github.com/AustinFWK/valorant-news-bot"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+            alignItems: "center",
+          }}
         >
-          <GitHubIcon />
-        </IconButton>
+          <Typography gutterBottom variant="h5" component="div">
+            Valorant Patchnotes Bot
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            I developed a discord bot that automatically scrapes the Valorant
+            patchnotes page and posts them in a designated discord channel
+            whenever a new patch is released.
+          </Typography>
+          <Typography variant="h6" sx={{ color: "text.primary" }}>
+            Tech Stack: Python, Discord.py, BeautifulSoup, Selenium
+          </Typography>
+          <IconButton
+            component="a"
+            href="https://github.com/AustinFWK/valorant-news-bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <GitHubIcon />
+          </IconButton>
+        </Box>
       </CardContent>
     </Card>
   );
