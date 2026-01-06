@@ -6,11 +6,16 @@ import Typography from "@mui/material/Typography";
 export default function DevYoungstown() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
+      <img
+        src="/public/Dev-Youngstown-logo.svg"
         alt="devyoungstown logo"
+        style={{
+          height: "25%",
+          width: "25%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginTop: "1rem",
+        }}
       />
       <CardContent>
         <Typography gutterBottom variant="h4">
