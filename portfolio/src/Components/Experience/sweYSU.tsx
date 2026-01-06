@@ -1,16 +1,20 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
 export default function SWEYSU() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="ysu logo"
+      <img
+        src="YSU.svg"
+        alt="YSU logo"
+        style={{
+          height: "25%",
+          width: "25%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginTop: "1rem",
+        }}
       />
       <CardContent>
         <Typography gutterBottom variant="h4">

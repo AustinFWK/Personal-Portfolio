@@ -1,17 +1,32 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
+import { Typography, CardContent, Card, Box } from "@mui/material";
 
 export default function UndergraduateResearch() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="TA logo"
-      />
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <img
+          src="YSU.svg"
+          alt="YSU logo"
+          style={{
+            height: "25%",
+            width: "25%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "1rem",
+          }}
+        />
+        <img
+          src="TA.svg"
+          alt="TA logo"
+          style={{
+            height: "25%",
+            width: "25%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "1rem",
+          }}
+        />
+      </Box>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Undergraduate Research{" "}

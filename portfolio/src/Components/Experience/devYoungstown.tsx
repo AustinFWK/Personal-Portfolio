@@ -1,13 +1,12 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
 export default function DevYoungstown() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <img
-        src="/public/Dev-Youngstown-logo.svg"
+        src="Dev-Youngstown-logo.svg"
         alt="devyoungstown logo"
         style={{
           height: "25%",
