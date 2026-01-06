@@ -1,6 +1,4 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 
 export default function DevYoungstown() {
   return (
@@ -17,23 +15,32 @@ export default function DevYoungstown() {
         }}
       />
       <CardContent>
-        <Typography gutterBottom variant="h4">
-          DevYoungstown
-        </Typography>
-        <Typography gutterBottom variant="h5" component="div">
-          Full Stack Software Engineer
-        </Typography>
-        <Typography gutterBottom variant="h6" component="div">
-          2024-Present
-        </Typography>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          I am currently a full stack Software Engineer at{" "}
-          <a href="https://www.youngstown.dev/" target="_blank">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
+          <Typography gutterBottom variant="h4">
             DevYoungstown
-          </a>{" "}
-          where I specialize in developing and maintaining Web App MVPs for our
-          clients!
-        </Typography>
+          </Typography>
+          <Typography gutterBottom variant="h5" component="div">
+            Full Stack Software Engineer
+          </Typography>
+          <Typography gutterBottom variant="h6" component="div">
+            June 2024 - Decemeber 2025
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            I am currently a full stack Software Engineer at{" "}
+            <a href="https://www.youngstown.dev/" target="_blank">
+              DevYoungstown
+            </a>{" "}
+            where I specialize in developing and maintaining Web App MVPs for
+            our clients!
+          </Typography>
+        </Box>
       </CardContent>
     </Card>
   );
