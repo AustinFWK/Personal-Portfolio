@@ -12,6 +12,7 @@ export default function EclipseProject() {
             flexDirection: "column",
             gap: "1rem",
             alignItems: "center",
+            textAlign: "center",
           }}
         >
           <Brightness4Icon />

@@ -12,6 +12,7 @@ export default function DiscordBot() {
             flexDirection: "column",
             gap: "1rem",
             alignItems: "center",
+            textAlign: "center",
           }}
         >
           <SmartToyIcon />

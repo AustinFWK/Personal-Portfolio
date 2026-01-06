@@ -13,6 +13,7 @@ export default function HabitTracker() {
             flexDirection: "column",
             gap: "1rem",
             alignItems: "center",
+            textAlign: "center",
           }}
         >
           <PsychologyIcon />
