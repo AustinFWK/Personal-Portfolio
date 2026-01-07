@@ -10,6 +10,14 @@ export default function Socials() {
         href="https://www.linkedin.com/in/austin-winger-kailer-761170295/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        sx={{
+          color: "text.primary",
+          "&:hover": {
+            backgroundColor: "transparent",
+            color: "primary.main",
+          },
+        }}
       >
         <LinkedInIcon />
       </IconButton>
@@ -19,7 +27,13 @@ export default function Socials() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
-        accent-color="inherit"
+        sx={{
+          color: "text.primary",
+          "&:hover": {
+            backgroundColor: "transparent",
+            color: "primary.main",
+          },
+        }}
       >
         <GitHubIcon />
       </IconButton>
