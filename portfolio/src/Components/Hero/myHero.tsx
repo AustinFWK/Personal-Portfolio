@@ -45,8 +45,9 @@ export default function MyHero() {
           </Typography>
 
           <Typography variant="h6" color="text.secondary">
-            In my free time I like to work on projects, play video games when I
-            have the time, and collect Pokémon cards!
+            When I&apos;m not working, I enjoy spending my time on personal
+            projects, playing video games when time permits, and collecting
+            Pokémon cards!
           </Typography>
 
           <Socials />
