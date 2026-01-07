@@ -12,9 +12,6 @@ export default function MyHero() {
         textAlign: "center",
       }}
     >
-      <Typography variant="h1" sx={{ marginBottom: "2rem", marginTop: "1rem" }}>
-        Welcome to My Portfolio
-      </Typography>
       <div
         style={{
           display: "flex",
@@ -29,6 +26,12 @@ export default function MyHero() {
           src="/headshot.jpg"
           alt="Hero Image"
           className="responsive-image"
+          style={{
+            width: "300px",
+            height: "350px",
+            borderRadius: "50%",
+            objectFit: "cover",
+          }}
         />
         <div
           style={{
@@ -36,16 +39,23 @@ export default function MyHero() {
             flexDirection: "column",
             alignItems: "center",
             gap: "1rem",
+            maxWidth: "600px",
           }}
         >
-          <Typography>
-            Austin Winger-Kailer
-            <br />
+          <Typography
+            variant="h2"
+            sx={{ marginBottom: "1rem", marginTop: "2rem" }}
+          >
+            Hello! I'm Austin Winger-Kailer
           </Typography>
-          <Typography>
-            Full Stack Web Developer <br />
+          <Typography variant="h5">
+            I'm a Full Stack Web Developer based out of Youngstown, Ohio. I love
+            to build projects from the ground up and slowly watch them piece
+            together into something special{" "}
           </Typography>
-          <Typography> Full time coffee shop enjoyer </Typography>
+          <Typography variant="h6">
+            I'm also an avid coffee shop enjoyer
+          </Typography>
           <Button
             href="SWE_resume.pdf"
             target="_blank"

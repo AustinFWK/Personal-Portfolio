@@ -18,7 +18,7 @@ export default function HabitTracker() {
         >
           <PsychologyIcon />
           <Typography gutterBottom variant="h5" component="div">
-            Habit Tracker (WIP)
+            Habit Tracker
           </Typography>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
             I developed a habit tracking web application that allows users to
