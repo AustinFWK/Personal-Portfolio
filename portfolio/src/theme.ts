@@ -23,5 +23,16 @@ export const Theme = createTheme({
         },
       },
     },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          transition: "0.2s ease",
+          "&:hover": {
+            transform: "translateY(-4px)",
+            boxShadow: 6,
+          },
+        },
+      },
+    },
   },
 });

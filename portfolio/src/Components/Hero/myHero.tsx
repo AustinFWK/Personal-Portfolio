@@ -38,10 +38,14 @@ export default function MyHero() {
             gap: "1rem",
           }}
         >
-          <p>
+          <Typography>
             Austin Winger-Kailer
-            <br /> Full Stack Web Developer <br /> Full time coffee shop enjoyer
-          </p>
+            <br />
+          </Typography>
+          <Typography>
+            Full Stack Web Developer <br />
+          </Typography>
+          <Typography> Full time coffee shop enjoyer </Typography>
           <Button
             href="SWE_resume.pdf"
             target="_blank"
