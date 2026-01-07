@@ -1,64 +1,57 @@
-import { Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Socials from "./socials";
 
 export default function MyHero() {
   return (
-    <div
+    <Box
       id="hero"
-      style={{
+      sx={{
+        minHeight: "50vh",
         display: "flex",
-        flexDirection: "column",
+        alignItems: "center",
         justifyContent: "center",
-        textAlign: "center",
+        px: 2,
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          gap: "2rem",
-          padding: ".5rem",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+      <Stack
+        direction={{ xs: "column", md: "row" }}
+        spacing={8}
+        alignItems="center"
+        maxWidth={1000}
       >
-        <img
+        {/* Image */}
+        <Box
+          component="img"
           src="/headshot.jpg"
           alt="Hero Image"
-          className="responsive-image"
-          style={{
-            width: "300px",
-            height: "350px",
+          sx={{
+            width: { xs: 200, md: 350 },
+            height: { xs: 250, md: 400 },
             borderRadius: "50%",
             objectFit: "cover",
           }}
         />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "1rem",
-            maxWidth: "600px",
-          }}
-        >
-          <Typography
-            variant="h2"
-            sx={{ marginBottom: "1rem", marginTop: "2rem" }}
-          >
-            Hello! I'm Austin Winger-Kailer
+
+        {/* Text */}
+        <Stack spacing={3} alignItems={{ xs: "center", md: "flex-start" }}>
+          <Typography variant="h2">
+            Hello! I&apos;m Austin Winger-Kailer
           </Typography>
-          <Typography variant="h5">
-            I'm a Full Stack Web Developer based out of Youngstown, Ohio. I love
-            to build projects from the ground up and slowly watch them piece
-            together into something special{" "}
+
+          <Typography variant="h5" color="text.secondary">
+            I&apos;m a Full Stack Web Developer based out of Youngstown, Ohio. I
+            love to build projects from the ground up and slowly watch them
+            piece together into something special.
           </Typography>
-          <Typography variant="h6">
-            I'm also an avid coffee shop enjoyer
+
+          <Typography variant="h6" color="text.secondary">
+            In my free time I like to work on projects, play video games when I
+            have the time, and collect Pokémon cards!
           </Typography>
+
           <Socials />
-        </div>
-      </div>
-    </div>
+        </Stack>
+      </Stack>
+    </Box>
   );
 }
