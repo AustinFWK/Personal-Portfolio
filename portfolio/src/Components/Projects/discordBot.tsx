@@ -33,6 +33,13 @@ export default function DiscordBot() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
+            sx={{
+              color: "text.primary",
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: "primary.main",
+              },
+            }}
           >
             <GitHubIcon />
           </IconButton>
