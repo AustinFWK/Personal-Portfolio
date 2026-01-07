@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "@mui/material";
 
 interface GitHubCommitAuthor {
   name: string;
@@ -68,9 +69,9 @@ export function LatestCommit({ username, repo }: LatestCommitProps) {
 
   return (
     <div>
-      <a href={commit.html_url} target="_blank" rel="noreferrer">
+      <Link href={commit.html_url} target="_blank" rel="noreferrer">
         {message}
-      </a>
+      </Link>
       <div style={{ fontSize: "0.8rem", opacity: 0.8 }}>
         {date.toLocaleString()}
       </div>

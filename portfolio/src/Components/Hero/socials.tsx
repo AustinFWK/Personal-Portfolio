@@ -19,6 +19,7 @@ export default function Socials() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
+        accent-color="inherit"
       >
         <GitHubIcon />
       </IconButton>

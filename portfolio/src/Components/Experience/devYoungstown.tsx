@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography, Link } from "@mui/material";
 
 export default function DevYoungstown() {
   return (
@@ -34,9 +34,9 @@ export default function DevYoungstown() {
           </Typography>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
             I am currently a full stack Software Engineer at{" "}
-            <a href="https://www.youngstown.dev/" target="_blank">
+            <Link href="https://www.youngstown.dev/" target="_blank">
               DevYoungstown
-            </a>{" "}
+            </Link>{" "}
             where I specialize in developing and maintaining Web App MVPs for
             our clients!
           </Typography>
