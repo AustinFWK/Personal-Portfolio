@@ -17,6 +17,7 @@ export default function Socials() {
             backgroundColor: "transparent",
             color: "primary.main",
           },
+          transform: "scale(2.0)",
         }}
       >
         <LinkedInIcon />
@@ -33,6 +34,7 @@ export default function Socials() {
             backgroundColor: "transparent",
             color: "primary.main",
           },
+          transform: "scale(2.0)",
         }}
       >
         <GitHubIcon />

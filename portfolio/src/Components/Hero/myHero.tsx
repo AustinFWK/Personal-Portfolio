@@ -1,4 +1,4 @@
-import { Typography, Button } from "@mui/material";
+import { Typography } from "@mui/material";
 import Socials from "./socials";
 
 export default function MyHero() {
@@ -56,14 +56,6 @@ export default function MyHero() {
           <Typography variant="h6">
             I'm also an avid coffee shop enjoyer
           </Typography>
-          <Button
-            href="SWE_resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="contained"
-          >
-            Resume
-          </Button>
           <Socials />
         </div>
       </div>

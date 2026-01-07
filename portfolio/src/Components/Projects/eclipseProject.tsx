@@ -1,6 +1,7 @@
 import { IconButton, Card, Typography, CardContent, Box } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
+import { LatestCommit } from "../../Utils";
 
 export default function EclipseProject() {
   return (
@@ -28,6 +29,7 @@ export default function EclipseProject() {
           <Typography variant="h6" sx={{ color: "text.primary" }}>
             Tech Stack: React(JS), Node.js, Python, Flask, GoogleMaps API
           </Typography>
+          <LatestCommit username="AustinFWK" repo="hackysu-2024" />
           <IconButton
             component="a"
             href="https://github.com/AustinFWK/hackysu-2024"

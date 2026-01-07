@@ -1,6 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 import { IconButton, Card, Typography, CardContent, Box } from "@mui/material";
+import { LatestCommit } from "../../Utils";
 
 export default function DiscordBot() {
   return (
@@ -27,6 +28,7 @@ export default function DiscordBot() {
           <Typography variant="h6" sx={{ color: "text.primary" }}>
             Tech Stack: Python, Discord.py, BeautifulSoup, Selenium
           </Typography>
+          <LatestCommit username="AustinFWK" repo="valorant-news-bot" />
           <IconButton
             component="a"
             href="https://github.com/AustinFWK/valorant-news-bot"

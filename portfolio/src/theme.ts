@@ -14,7 +14,7 @@ export const Theme = createTheme({
     MuiLink: {
       styleOverrides: {
         root: {
-          color: "#ad6639ff", // or "primary.main" if using functions
+          color: "#5d3821ff", // or "primary.main" if using functions
           textDecoration: "none",
           fontWeight: 500,
           "&:hover": {
