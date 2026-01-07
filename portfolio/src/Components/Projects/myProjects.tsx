@@ -5,7 +5,7 @@ import HabitTracker from "./habitTracker";
 export default function MyProjects() {
   return (
     <div id="projects">
-      <h1 style={{ textAlign: "center", marginBottom: "1rem" }}>Projects</h1>
+      <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Projects</h1>
       <div className="card-layout">
         <HabitTracker />
         <EclipseProject />
