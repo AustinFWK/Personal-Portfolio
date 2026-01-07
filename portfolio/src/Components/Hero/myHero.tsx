@@ -12,7 +12,9 @@ export default function MyHero() {
         textAlign: "center",
       }}
     >
-      <Typography variant="h1">Welcome to My Portfolio</Typography>
+      <Typography variant="h1" sx={{ marginBottom: "2rem", marginTop: "1rem" }}>
+        Welcome to My Portfolio
+      </Typography>
       <div
         style={{
           display: "flex",
