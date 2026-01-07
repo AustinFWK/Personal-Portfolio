@@ -6,7 +6,13 @@ import NavBar from "./Components/Nav/navBar.tsx";
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "4rem",
+      }}
+    >
       <NavBar />
       <MyHero />
       <MyExperience />

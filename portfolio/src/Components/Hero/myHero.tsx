@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import Socials from "./socials";
 
 export default function MyHero() {
@@ -11,7 +12,7 @@ export default function MyHero() {
         textAlign: "center",
       }}
     >
-      <h1>Welcome to My Portfolio</h1>
+      <Typography variant="h1">Welcome to My Portfolio</Typography>
       <div
         style={{
           display: "flex",
@@ -22,6 +23,11 @@ export default function MyHero() {
           justifyContent: "center",
         }}
       >
+        <img
+          src="/headshot.jpg"
+          alt="Hero Image"
+          className="responsive-image"
+        />
         <div
           style={{
             display: "flex",
@@ -30,17 +36,12 @@ export default function MyHero() {
             gap: "1rem",
           }}
         >
-          <img
-            src="/headshot.jpg"
-            alt="Hero Image"
-            className="responsive-image"
-          />
+          <p>
+            Austin Winger-Kailer
+            <br /> Full Stack Web Developer <br /> Full time coffee shop enjoyer
+          </p>
           <Socials />
         </div>
-        <p>
-          Austin Winger-Kailer
-          <br /> Full Stack Web Developer <br /> Full time coffee shop enjoyer
-        </p>
       </div>
     </div>
   );

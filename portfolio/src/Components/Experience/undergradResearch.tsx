@@ -36,7 +36,7 @@ export default function UndergraduateResearch() {
             textAlign: "center",
           }}
         >
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h4" component="div">
             Undergraduate Research{" "}
           </Typography>
           <Typography gutterBottom variant="h6" component="div">
