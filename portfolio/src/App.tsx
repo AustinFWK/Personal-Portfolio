@@ -14,20 +14,34 @@ function App() {
   }, []);
 
   return (
-    <Fade in={loaded} timeout={1100}>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "4rem",
-        }}
-      >
-        <NavBar />
-        <MyHero />
-        <MyExperience />
-        <MyProjects />
-      </div>
-    </Fade>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "4rem",
+      }}
+    >
+      <Fade in={loaded} timeout={600} style={{ transitionDelay: loaded ? "0ms" : "0ms" }}>
+        <div>
+          <NavBar />
+        </div>
+      </Fade>
+      <Fade in={loaded} timeout={600} style={{ transitionDelay: loaded ? "200ms" : "0ms" }}>
+        <div>
+          <MyHero />
+        </div>
+      </Fade>
+      <Fade in={loaded} timeout={600} style={{ transitionDelay: loaded ? "400ms" : "0ms" }}>
+        <div>
+          <MyExperience />
+        </div>
+      </Fade>
+      <Fade in={loaded} timeout={600} style={{ transitionDelay: loaded ? "600ms" : "0ms" }}>
+        <div>
+          <MyProjects />
+        </div>
+      </Fade>
+    </div>
   );
 }
 
