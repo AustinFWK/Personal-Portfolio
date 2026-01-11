@@ -2,22 +2,35 @@ import { createTheme } from "@mui/material";
 
 export const Theme = createTheme({
   palette: {
+    mode: "dark",
     primary: {
-      main: "#4c2018ff",
+      main: "#3b82f6", // Modern blue
+      light: "#60a5fa",
+      dark: "#2563eb",
     },
-
+    secondary: {
+      main: "#0ea5e9", // Cyan accent
+      light: "#22d3ee",
+      dark: "#0284c7",
+    },
     background: {
-      default: "#242424ff",
+      default: "#0f172a", // Deep slate
+      paper: "#1e293b", // Lighter slate for cards
+    },
+    text: {
+      primary: "#f1f5f9", // Light slate
+      secondary: "#cbd5e1", // Medium slate
     },
   },
   components: {
     MuiLink: {
       styleOverrides: {
         root: {
-          color: "#5d3821ff", // or "primary.main" if using functions
+          color: "#3b82f6",
           textDecoration: "none",
           fontWeight: 500,
           "&:hover": {
+            color: "#60a5fa",
             textDecoration: "underline",
           },
         },
