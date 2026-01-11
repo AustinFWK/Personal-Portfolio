@@ -1,31 +1,37 @@
-import { Link } from "@mui/material";
+import { Link, Box } from "@mui/material";
 
 export default function NavBar() {
   return (
-    <nav
-      style={{
+    <Box
+      component="nav"
+      sx={{
         position: "sticky",
         top: 0,
         zIndex: 1000,
-        backgroundColor: "background.default",
+        backgroundColor: "rgba(15, 23, 42, 0.8)",
         backdropFilter: "blur(10px)",
       }}
     >
-      <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            paddingTop: "1rem",
-            paddingRight: "2rem",
-            paddingBottom: "1rem",
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "flex-end",
+          px: 3,
+          py: 2,
+        }}
+      >
+        <Link
+          href="SWE_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{
+            fontSize: "1.1rem",
+            fontWeight: 600,
           }}
         >
-          <Link href="SWE_resume.pdf" target="_blank" rel="noopener noreferrer">
-            Resume
-          </Link>
-        </div>
-      </div>
-    </nav>
+          Resume
+        </Link>
+      </Box>
+    </Box>
   );
 }

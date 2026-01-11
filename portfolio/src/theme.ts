@@ -2,22 +2,35 @@ import { createTheme } from "@mui/material";
 
 export const Theme = createTheme({
   palette: {
+    mode: "dark",
     primary: {
-      main: "#4c2018ff",
+      main: "#3b82f6", // Modern blue
+      light: "#60a5fa",
+      dark: "#2563eb",
     },
-
+    secondary: {
+      main: "#0ea5e9", // Cyan accent
+      light: "#22d3ee",
+      dark: "#0284c7",
+    },
     background: {
-      default: "#242424ff",
+      default: "#0f172a", // Deep slate
+      paper: "#1e293b", // Lighter slate for cards
+    },
+    text: {
+      primary: "#f1f5f9", // Light slate
+      secondary: "#cbd5e1", // Medium slate
     },
   },
   components: {
     MuiLink: {
       styleOverrides: {
         root: {
-          color: "#5d3821ff", // or "primary.main" if using functions
+          color: "#3b82f6",
           textDecoration: "none",
           fontWeight: 500,
           "&:hover": {
+            color: "#60a5fa",
             textDecoration: "underline",
           },
         },
@@ -26,10 +39,12 @@ export const Theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          transition: "0.2s ease",
+          transition: "all 0.3s ease",
+          border: "1px solid rgba(59, 130, 246, 0.1)",
           "&:hover": {
-            transform: "translateY(-4px)",
-            boxShadow: 6,
+            transform: "translateY(-8px)",
+            boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(59, 130, 246, 0.3)",
+            borderColor: "rgba(59, 130, 246, 0.4)",
           },
         },
       },
