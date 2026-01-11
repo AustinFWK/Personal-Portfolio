@@ -39,10 +39,12 @@ export const Theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          transition: "0.2s ease",
+          transition: "all 0.3s ease",
+          border: "1px solid rgba(59, 130, 246, 0.1)",
           "&:hover": {
-            transform: "translateY(-4px)",
-            boxShadow: 6,
+            transform: "translateY(-8px)",
+            boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(59, 130, 246, 0.3)",
+            borderColor: "rgba(59, 130, 246, 0.4)",
           },
         },
       },
