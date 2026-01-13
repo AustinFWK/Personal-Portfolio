@@ -1,11 +1,11 @@
 import "./index.css";
-import MyExperience from "./Components/Experience/myExperience.tsx";
 import MyProjects from "./Components/Projects/myProjects.tsx";
 import MyHero from "./Components/Hero/myHero.tsx";
 import NavBar from "./Components/Nav/navBar.tsx";
 import { Fade } from "@mui/material";
 import { useState, useEffect } from "react";
 import MySkills from "./Components/Skills/techSkills.tsx";
+import ExperienceCard from "./Components/Experience/ExperienceCard.tsx";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -47,7 +47,7 @@ function App() {
         style={{ transitionDelay: loaded ? "400ms" : "0ms" }}
       >
         <div>
-          <MyExperience />
+          <ExperienceCard />
         </div>
       </Fade>
       <Fade

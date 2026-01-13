@@ -1,9 +1,9 @@
 import DevYoungstown from "./devYoungstown";
 import SWEYSU from "./sweYSU";
 import UndergraduateResearch from "./undergradResearch";
-import { Typography } from "@mui/material";
+import { Typography, Box, Card, CardContent } from "@mui/material";
 
-export default function MyExperience() {
+export default function ExperienceCard() {
   return (
     <section id="experience">
       <Typography
