@@ -1,14 +1,11 @@
-import SmartToyIcon from "@mui/icons-material/SmartToy";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import PsychologyIcon from "@mui/icons-material/Psychology";
-
 export type project = {
   svgIcon?: string;
   title: string;
   description: string;
   technologies: string[];
-  recent_commit_message?: string;
   repo_link: string;
+  repo_owner?: string;
+  repo_name?: string;
   demo_video?: string;
 };
 
@@ -27,6 +24,8 @@ export const projects: project[] = [
       "SQLite",
     ],
     repo_link: "https://github.com/AustinFWK/HabitTracker",
+    repo_owner: "AustinFWK",
+    repo_name: "HabitTracker",
   },
 
   {
@@ -34,7 +33,9 @@ export const projects: project[] = [
     description:
       "During my first ever hackathon in 2024, I developed a web application centralized around backend functionality that obtained the user's location, and provided routes to cities based in Ohio that had the best viewing experience for the 2024 solar eclipse.",
     technologies: ["React(JS)", "Node.js", "Python", "Flask", "GoogleMaps API"],
-    repo_link: "https://github.com/AustinFWK?tab=repositories",
+    repo_link: "https://github.com/AustinFWK/hackysu-2024",
+    repo_owner: "AustinFWK",
+    repo_name: "hackysu-2024",
   },
 
   {
@@ -43,5 +44,7 @@ export const projects: project[] = [
       "I developed a discord bot that automatically scrapes the Valorant patchnotes page and posts them in a designated discord channel whenever a new patch is released.",
     technologies: ["Python", "Discord.py", "BeautifulSoup4", "Selenium"],
     repo_link: "https://github.com/AustinFWK/valorant-news-bot",
+    repo_owner: "AustinFWK",
+    repo_name: "valorant-news-bot",
   },
 ];
