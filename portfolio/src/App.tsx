@@ -5,6 +5,7 @@ import MyHero from "./Components/Hero/myHero.tsx";
 import NavBar from "./Components/Nav/navBar.tsx";
 import { Fade } from "@mui/material";
 import { useState, useEffect } from "react";
+import MySkills from "./Components/Skills/techSkills.tsx";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -29,6 +30,15 @@ function App() {
       >
         <div>
           <MyHero />
+        </div>
+      </Fade>
+      <Fade
+        in={loaded}
+        timeout={600}
+        style={{ transitionDelay: loaded ? "300ms" : "0ms" }}
+      >
+        <div>
+          <MySkills />
         </div>
       </Fade>
       <Fade

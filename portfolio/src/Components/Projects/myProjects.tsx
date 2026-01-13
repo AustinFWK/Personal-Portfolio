@@ -1,11 +1,17 @@
 import DiscordBot from "./discordBot";
 import EclipseProject from "./eclipseProject";
 import HabitTracker from "./habitTracker";
+import { Typography } from "@mui/material";
 
 export default function MyProjects() {
   return (
     <div id="projects">
-      <h1 style={{ textAlign: "center", marginBottom: "4rem" }}>Projects</h1>
+      <Typography
+        variant="h3"
+        style={{ textAlign: "center", marginBottom: "4rem" }}
+      >
+        Projects
+      </Typography>
       <div className="card-layout">
         <HabitTracker />
         <EclipseProject />
