@@ -7,6 +7,7 @@ export default function MyExperience() {
   return (
     <section id="experience">
       <Typography
+        component="div"
         variant="h3"
         style={{ textAlign: "center", marginBottom: "4rem" }}
       >

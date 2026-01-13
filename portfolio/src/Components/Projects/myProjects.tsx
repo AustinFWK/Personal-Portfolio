@@ -7,6 +7,7 @@ export default function MyProjects() {
   return (
     <div id="projects">
       <Typography
+        component="div"
         variant="h3"
         style={{ textAlign: "center", marginBottom: "4rem" }}
       >
