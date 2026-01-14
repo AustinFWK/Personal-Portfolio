@@ -4,8 +4,8 @@ export type project = {
   description: string;
   technologies: string[];
   repo_link: string;
-  repo_owner?: string;
-  repo_name?: string;
+  repo_owner: string;
+  repo_name: string;
   demo_video?: string;
 };
 
