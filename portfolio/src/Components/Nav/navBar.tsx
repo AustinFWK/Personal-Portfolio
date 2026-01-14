@@ -1,4 +1,4 @@
-import { Link, Box } from "@mui/material";
+import { Link, Box, Typography } from "@mui/material";
 
 export default function NavBar() {
   return (
@@ -20,11 +20,33 @@ export default function NavBar() {
           py: 2,
         }}
       >
+        <Typography
+          sx={{ marginLeft: "1rem", fontSize: "1.1rem", fontWeight: 600 }}
+          component="a"
+          href="#tech-skills"
+        >
+          Skills
+        </Typography>
+        <Typography
+          sx={{ marginLeft: "1rem", fontSize: "1.1rem", fontWeight: 600 }}
+          component="a"
+          href="#experience"
+        >
+          Experience
+        </Typography>
+        <Typography
+          sx={{ marginLeft: "1rem", fontSize: "1.1rem", fontWeight: 600 }}
+          component="a"
+          href="#projects"
+        >
+          Projects
+        </Typography>
         <Link
           href="SWE_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
+            marginLeft: "1rem",
             fontSize: "1.1rem",
             fontWeight: 600,
           }}

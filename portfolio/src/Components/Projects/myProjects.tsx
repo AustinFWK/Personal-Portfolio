@@ -1,15 +1,21 @@
-import DiscordBot from "./discordBot";
-import EclipseProject from "./eclipseProject";
-import HabitTracker from "./habitTracker";
+import { Typography } from "@mui/material";
+import { projects } from "../../Data/project";
+import ProjectCard from "./ProjectCard";
 
 export default function MyProjects() {
   return (
     <div id="projects">
-      <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Projects</h1>
+      <Typography
+        component="div"
+        variant="h3"
+        style={{ textAlign: "center", marginBottom: "4rem" }}
+      >
+        Projects
+      </Typography>
       <div className="card-layout">
-        <HabitTracker />
-        <EclipseProject />
-        <DiscordBot />
+        {projects.map((project) => (
+          <ProjectCard key={project.title} project={project} />
+        ))}
       </div>
     </div>
   );

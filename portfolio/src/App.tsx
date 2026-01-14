@@ -1,10 +1,12 @@
 import "./index.css";
-import MyExperience from "./Components/Experience/myExperience.tsx";
 import MyProjects from "./Components/Projects/myProjects.tsx";
 import MyHero from "./Components/Hero/myHero.tsx";
 import NavBar from "./Components/Nav/navBar.tsx";
 import { Fade } from "@mui/material";
 import { useState, useEffect } from "react";
+import MySkills from "./Components/Skills/techSkills.tsx";
+import MyExperiences from "./Components/Experience/MyExperiences.tsx";
+import Footer from "./Components/Footer/Footer.tsx";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -34,10 +36,19 @@ function App() {
       <Fade
         in={loaded}
         timeout={600}
+        style={{ transitionDelay: loaded ? "300ms" : "0ms" }}
+      >
+        <div>
+          <MySkills />
+        </div>
+      </Fade>
+      <Fade
+        in={loaded}
+        timeout={600}
         style={{ transitionDelay: loaded ? "400ms" : "0ms" }}
       >
         <div>
-          <MyExperience />
+          <MyExperiences />
         </div>
       </Fade>
       <Fade
@@ -47,6 +58,15 @@ function App() {
       >
         <div>
           <MyProjects />
+        </div>
+      </Fade>
+      <Fade
+        in={loaded}
+        timeout={600}
+        style={{ transitionDelay: loaded ? "700ms" : "0ms" }}
+      >
+        <div>
+          <Footer />
         </div>
       </Fade>
     </div>

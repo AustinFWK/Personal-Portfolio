@@ -94,3 +94,9 @@ button:focus-visible {
     background-color: #2563eb;
   }
 }
+
+.card-layout {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: clamp(320px, 90vw, 1800px);
+}
