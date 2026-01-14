@@ -82,7 +82,10 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           >
             {dateRange}
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          <Typography
+            variant="body2"
+            sx={{ color: "text.secondary", fontSize: 16 }}
+          >
             {description}
           </Typography>
         </Box>
