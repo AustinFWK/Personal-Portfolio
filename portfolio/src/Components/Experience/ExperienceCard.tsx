@@ -78,7 +78,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             gutterBottom
             variant="caption"
             component="div"
-            fontSize={16}
+            fontSize={15}
           >
             {dateRange}
           </Typography>
