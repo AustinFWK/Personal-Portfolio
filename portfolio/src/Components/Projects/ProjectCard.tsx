@@ -1,4 +1,11 @@
-import { Typography, Box, Card, CardContent, IconButton } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Card,
+  CardContent,
+  IconButton,
+  Icon,
+} from "@mui/material";
 import type { project } from "../../Data/project";
 import { LatestCommit } from "../../Utils/getLastCommit";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -13,17 +20,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     title,
     description,
     technologies,
-    repo_link,
     repo_owner,
     repo_name,
+    repo_link,
   } = project;
 
   return (
     <Card sx={{ maxWidth: 345, marginBottom: "2rem" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <img
-          src={svgIcon}
-          alt={`${title} logo`}
+        <Icon
+          component={svgIcon}
           style={{
             height: "25%",
             width: "25%",
@@ -56,7 +62,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </Typography>
           <IconButton
             component="a"
-            href="{repo_link}"
+            href={repo_link}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

@@ -4,7 +4,7 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import type { SvgIconComponent } from "@mui/icons-material";
 
 export type project = {
-  svgIcon?: SvgIconComponent;
+  svgIcon: SvgIconComponent;
   title: string;
   description: string;
   technologies: string[];
