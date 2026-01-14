@@ -5,6 +5,8 @@ import {
   CardContent,
   IconButton,
   Icon,
+  Chip,
+  Stack,
 } from "@mui/material";
 import type { project } from "../../Data/project";
 import { LatestCommit } from "../../Utils/getLastCommit";
@@ -54,9 +56,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
             {description}
           </Typography>
-          <Typography variant="h6" component="div">
-            {technologies.join(", ")}
-          </Typography>
+          <Stack
+            direction="row"
+            flexWrap="wrap"
+            justifyContent="center"
+            gap={1}
+            sx={{ mt: 2 }}
+          >
+            {technologies.map((tech) => (
+              <Chip key={tech} label={tech} size="small" variant="outlined" />
+            ))}
+          </Stack>
+
           <Typography>
             <LatestCommit username={repo_owner} repo={repo_name} />
           </Typography>
