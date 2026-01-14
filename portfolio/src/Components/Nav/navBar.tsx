@@ -20,17 +20,6 @@ export default function NavBar() {
           py: 2,
         }}
       >
-        <Link
-          href="SWE_resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{
-            fontSize: "1.1rem",
-            fontWeight: 600,
-          }}
-        >
-          Resume
-        </Link>
         <Typography
           sx={{ marginLeft: "1rem", fontSize: "1.1rem", fontWeight: 600 }}
           component="a"
@@ -52,6 +41,17 @@ export default function NavBar() {
         >
           Projects
         </Typography>
+        <Link
+          href="SWE_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{
+            fontSize: "1.1rem",
+            fontWeight: 600,
+          }}
+        >
+          Resume
+        </Link>
       </Box>
     </Box>
   );

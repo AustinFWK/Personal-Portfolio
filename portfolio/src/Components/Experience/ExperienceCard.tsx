@@ -17,7 +17,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
   } = experience;
 
   return (
-    <Card sx={{ maxWidth: 345, marginBottom: "2rem" }}>
+    <Card sx={{ maxWidth: 400, marginBottom: "2rem" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
           src={svgIcon}
