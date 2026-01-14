@@ -6,6 +6,7 @@ import { Fade } from "@mui/material";
 import { useState, useEffect } from "react";
 import MySkills from "./Components/Skills/techSkills.tsx";
 import MyExperiences from "./Components/Experience/MyExperiences.tsx";
+import Footer from "./Components/Footer/Footer.tsx";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -57,6 +58,15 @@ function App() {
       >
         <div>
           <MyProjects />
+        </div>
+      </Fade>
+      <Fade
+        in={loaded}
+        timeout={600}
+        style={{ transitionDelay: loaded ? "700ms" : "0ms" }}
+      >
+        <div>
+          <Footer />
         </div>
       </Fade>
     </div>
