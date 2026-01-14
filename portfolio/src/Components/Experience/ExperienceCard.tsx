@@ -74,7 +74,12 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
-          <Typography gutterBottom variant="h6" component="div">
+          <Typography
+            gutterBottom
+            variant="caption"
+            component="div"
+            fontSize={16}
+          >
             {dateRange}
           </Typography>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
