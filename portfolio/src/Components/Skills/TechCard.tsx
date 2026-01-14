@@ -22,9 +22,17 @@ export default function TechCard({ skill }: TechCardProps) {
           flexWrap="wrap"
           marginTop="1rem"
         >
-          {icons.map((IconComponent, index) => (
-            <IconComponent key={index} size={40} style={{ margin: "0.5rem" }} />
-          ))}
+          {icons.map((skillIcon, index) => {
+            const Icon = skillIcon.icon;
+            return (
+              <Icon
+                key={index}
+                size={40}
+                color={skillIcon.color}
+                style={{ margin: "0.5rem" }}
+              />
+            );
+          })}
         </Box>
       </CardContent>
     </Card>

@@ -17,24 +17,45 @@ import {
   SiExpress,
 } from "react-icons/si";
 
+export type SkillIcon = {
+  icon: IconType;
+  color?: string;
+};
+
 export type skills = {
   category: string;
-  icons: IconType[];
+  icons: SkillIcon[];
 };
 
 export const skillsData: skills[] = [
   {
     category: "Frontend",
-    icons: [FaReact, SiTypescript, FaHtml5, FaCss3Alt, SiMui],
+    icons: [
+      { icon: FaReact, color: "#61dafb" },
+      { icon: SiTypescript, color: "#3178c6" },
+      { icon: FaHtml5, color: "#e34f26" },
+      { icon: FaCss3Alt, color: "#1572b6" },
+      { icon: SiMui, color: "#007fff" },
+    ],
   },
 
   {
     category: "Backend",
-    icons: [FaPython, SiFastapi, SiExpress, SiSqlite],
+    icons: [
+      { icon: FaPython, color: "#3776ab" },
+      { icon: SiFastapi, color: "#009688" },
+      { icon: SiExpress, color: "#000000" },
+      { icon: SiSqlite, color: "#0690cf" },
+    ],
   },
 
   {
     category: "Dev Tools",
-    icons: [FaGithub, VscVscodeInsiders, SiXcode, FaNodeJs],
+    icons: [
+      { icon: FaGithub },
+      { icon: VscVscodeInsiders, color: "#007acc" },
+      { icon: SiXcode, color: "#147efb" },
+      { icon: FaNodeJs, color: "#339933" },
+    ],
   },
 ];
