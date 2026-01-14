@@ -64,10 +64,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             sx={{ mt: 2 }}
           >
             {technologies.map((tech) => (
-              <Chip key={tech} label={tech} size="small" variant="outlined" />
+              <Chip
+                onClick={() => {}}
+                key={tech}
+                label={tech}
+                size="medium"
+                variant="outlined"
+              />
             ))}
           </Stack>
-
           <Typography>
             <LatestCommit username={repo_owner} repo={repo_name} />
           </Typography>
