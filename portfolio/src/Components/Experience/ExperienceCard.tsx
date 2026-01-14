@@ -8,6 +8,7 @@ interface ExperienceCardProps {
 export default function ExperienceCard({ experience }: ExperienceCardProps) {
   const {
     organization,
+    organization_url,
     title,
     dateRange,
     description,
@@ -52,7 +53,22 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             textAlign: "center",
           }}
         >
-          <Typography gutterBottom variant="h4">
+          <Typography
+            gutterBottom
+            variant="h4"
+            component={organization_url ? "a" : "h4"}
+            href={organization_url}
+            target={organization_url ? "_blank" : undefined}
+            rel={organization_url ? "noopener noreferrer" : undefined}
+            sx={{
+              textDecoration: "none",
+              color: "inherit",
+              fontWeight: 600,
+              "&:hover": organization_url
+                ? { textDecoration: "underline" }
+                : undefined,
+            }}
+          >
             {organization}
           </Typography>
           <Typography gutterBottom variant="h5" component="div">

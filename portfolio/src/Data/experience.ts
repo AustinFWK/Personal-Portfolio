@@ -1,5 +1,6 @@
 export type experience = {
   organization: string;
+  organization_url?: string;
   title: string;
   dateRange: string;
   description: string;
@@ -10,6 +11,7 @@ export type experience = {
 export const experiences: experience[] = [
   {
     organization: "DevYoungstown",
+    organization_url: "https://www.youngstown.dev/",
     title: "Full Stack Software Engineer",
     dateRange: "June 2024 - December 2025",
     description:
@@ -19,6 +21,7 @@ export const experiences: experience[] = [
 
   {
     organization: "Youngstown State University",
+    organization_url: "https://ysu.edu/",
     title: "Student Software Engineer",
     dateRange: "August 2024 - December 2025",
     description:
@@ -28,6 +31,7 @@ export const experiences: experience[] = [
 
   {
     organization: "Youngstown State University",
+    organization_url: "https://ysu.edu/",
     title: "Undergraduate Researcher",
     dateRange: "August 2024 - May 2025",
     description:
