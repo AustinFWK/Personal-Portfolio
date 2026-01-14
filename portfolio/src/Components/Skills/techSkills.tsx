@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
-import FrontEnd from "./SpecificSection/frontEnd";
-import DevTools from "./SpecificSection/devTools";
-import BackEnd from "./SpecificSection/backEnd";
+import { skillsData } from "../../Data/skills";
+import TechCard from "../Skills/TechCard";
 
 export default function MySkills() {
   return (
@@ -14,9 +13,9 @@ export default function MySkills() {
         Technical Skills
       </Typography>
       <div className="card-layout">
-        <FrontEnd />
-        <BackEnd />
-        <DevTools />
+        {skillsData.map((skill) => (
+          <TechCard skill={skill} />
+        ))}
       </div>
     </section>
   );
