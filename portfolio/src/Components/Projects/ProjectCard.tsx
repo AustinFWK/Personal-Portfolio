@@ -31,8 +31,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <Icon
           component={svgIcon}
           style={{
-            height: "25%",
-            width: "25%",
+            height: "15%",
+            width: "15%",
             marginLeft: "auto",
             marginRight: "auto",
             marginTop: "1rem",
