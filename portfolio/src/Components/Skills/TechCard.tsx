@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, Box } from "@mui/material";
+import { Card, CardContent, Typography, Box, Tooltip } from "@mui/material";
 import type { skills } from "../../Data/skills";
 
 interface TechCardProps {
@@ -25,12 +25,31 @@ export default function TechCard({ skill }: TechCardProps) {
           {icons.map((skillIcon, index) => {
             const Icon = skillIcon.icon;
             return (
-              <Icon
+              <Tooltip
                 key={index}
-                size={40}
-                color={skillIcon.color}
-                style={{ margin: "0.5rem" }}
-              />
+                title={skillIcon.tooltip}
+                arrow
+                slotProps={{
+                  tooltip: {
+                    sx: {
+                      backgroundColor: skillIcon.color,
+                      color: "#fff",
+                      fontSize: "0.875rem",
+                      padding: "0.5rem 1rem",
+                    },
+                  },
+                }}
+              >
+                <Box
+                  component="span"
+                  sx={{
+                    display: "inline-flex",
+                    margin: "0.5rem",
+                  }}
+                >
+                  <Icon size={40} color={skillIcon.color} />
+                </Box>
+              </Tooltip>
             );
           })}
         </Box>

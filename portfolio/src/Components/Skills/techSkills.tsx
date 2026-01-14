@@ -14,7 +14,7 @@ export default function MySkills() {
       </Typography>
       <div className="card-layout">
         {skillsData.map((skill) => (
-          <TechCard skill={skill} />
+          <TechCard skill={skill} key={skill.category} />
         ))}
       </div>
     </section>
