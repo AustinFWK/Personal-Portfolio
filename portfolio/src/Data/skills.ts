@@ -20,6 +20,7 @@ import {
 export type SkillIcon = {
   icon: IconType;
   color?: string;
+  tooltip: string;
 };
 
 export type skills = {
@@ -31,31 +32,31 @@ export const skillsData: skills[] = [
   {
     category: "Frontend",
     icons: [
-      { icon: FaReact, color: "#61dafb" },
-      { icon: SiTypescript, color: "#3178c6" },
-      { icon: FaHtml5, color: "#e34f26" },
-      { icon: FaCss3Alt, color: "#1572b6" },
-      { icon: SiMui, color: "#007fff" },
+      { icon: FaReact, color: "#61dafb", tooltip: "React" },
+      { icon: SiTypescript, color: "#3178c6", tooltip: "TypeScript" },
+      { icon: FaHtml5, color: "#e34f26", tooltip: "HTML5" },
+      { icon: FaCss3Alt, color: "#1572b6", tooltip: "CSS3" },
+      { icon: SiMui, color: "#007fff", tooltip: "Material-UI" },
     ],
   },
 
   {
     category: "Backend",
     icons: [
-      { icon: FaPython, color: "#3776ab" },
-      { icon: SiFastapi, color: "#009688" },
-      { icon: SiExpress, color: "#000000" },
-      { icon: SiSqlite, color: "#0690cf" },
+      { icon: FaPython, color: "#3776ab", tooltip: "Python" },
+      { icon: SiFastapi, color: "#009688", tooltip: "FastAPI" },
+      { icon: SiExpress, color: "#000000", tooltip: "Express" },
+      { icon: SiSqlite, color: "#0690cf", tooltip: "SQLite" },
     ],
   },
 
   {
     category: "Dev Tools",
     icons: [
-      { icon: FaGithub },
-      { icon: VscVscodeInsiders, color: "#007acc" },
-      { icon: SiXcode, color: "#147efb" },
-      { icon: FaNodeJs, color: "#339933" },
+      { icon: FaGithub, tooltip: "GitHub" },
+      { icon: VscVscodeInsiders, color: "#007acc", tooltip: "VSCode" },
+      { icon: SiXcode, color: "#147efb", tooltip: "Xcode" },
+      { icon: FaNodeJs, color: "#339933", tooltip: "Node.js" },
     ],
   },
 ];
