@@ -14,7 +14,7 @@ export const experiences: experience[] = [
     dateRange: "June 2024 - December 2025",
     description:
       "I am currently a full stack Software Engineer at DevYoungstown where I specialize in developing and maintaining Web App MVPs for our clients!",
-    svgIcon: "Sev-Youngstown-logo.svg",
+    svgIcon: "Dev-Youngstown-logo.svg",
   },
 
   {

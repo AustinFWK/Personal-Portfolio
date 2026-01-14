@@ -17,9 +17,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
 
   return (
     <Card sx={{ maxWidth: 345, marginBottom: "2rem" }}>
-      <Box
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
-      >
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
         <img
           src={svgIcon}
           alt={`${organization} logo`}
@@ -44,31 +42,30 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             }}
           />
         )}
-
-        <CardContent>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              textAlign: "center",
-            }}
-          >
-            <Typography gutterBottom variant="h4">
-              {organization}
-            </Typography>
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
-            <Typography gutterBottom variant="h6" component="div">
-              {dateRange}
-            </Typography>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
-              {description}
-            </Typography>
-          </Box>
-        </CardContent>
       </Box>
+      <CardContent>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
+          <Typography gutterBottom variant="h4">
+            {organization}
+          </Typography>
+          <Typography gutterBottom variant="h5" component="div">
+            {title}
+          </Typography>
+          <Typography gutterBottom variant="h6" component="div">
+            {dateRange}
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            {description}
+          </Typography>
+        </Box>
+      </CardContent>
     </Card>
   );
 }
