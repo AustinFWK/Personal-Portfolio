@@ -46,6 +46,7 @@ export default function NavBar() {
           target="_blank"
           rel="noopener noreferrer"
           sx={{
+            marginLeft: "1rem",
             fontSize: "1.1rem",
             fontWeight: 600,
           }}
