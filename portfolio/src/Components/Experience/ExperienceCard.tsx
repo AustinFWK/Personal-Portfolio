@@ -1,6 +1,3 @@
-import DevYoungstown from "./devYoungstown";
-import SWEYSU from "./sweYSU";
-import UndergraduateResearch from "./undergradResearch";
 import { Typography, Box, Card, CardContent } from "@mui/material";
 import type { experience } from "../../Data/experience";
 
