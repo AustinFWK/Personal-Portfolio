@@ -7,6 +7,7 @@ export type project = {
   svgIcon: SvgIconComponent;
   title: string;
   description: string;
+  bullet_points: string[];
   technologies: string[];
   repo_link: string;
   repo_owner: string;
@@ -19,7 +20,12 @@ export const projects: project[] = [
     svgIcon: PsychologyIcon,
     title: "Habit Tracker",
     description:
-      "I developed a habit tracking web application that allows users to enter a journal entry about what they did during the day and also log how their mood was that day (very bad, neutral, very good, etc.). The user's entry is then sent to the backend where I use an anthropic AI model to analyze the entry and provide feedback on the user's habits and ways they can improve their habits through small daily changes.",
+      "AI-powered habit tracker with journaling, mood analysis, and personalized feedback.",
+    bullet_points: [
+      "Implemented AI-driven habit recommendations using Anthropic's Claude API .",
+      "Developed a full-stack application with React, TypeScript, FastAPI, and SQLite.",
+      "Integrated mood tracking and journaling features for comprehensive habit analysis.",
+    ],
     technologies: [
       "React",
       "TypeScript",
@@ -38,7 +44,12 @@ export const projects: project[] = [
     svgIcon: Brightness4Icon,
     title: "Ohio Eclipse Web App",
     description:
-      "During my first ever hackathon in 2024, I developed a web application centralized around backend functionality that obtained the user's location, and provided routes to cities based in Ohio that had the best viewing experience for the 2024 solar eclipse.",
+      "Location-conscious Web App for finding the best viewing locations for the 2024 solar eclipse in Ohio.",
+    bullet_points: [
+      "Utilized geolocation to detect user location.",
+      "Integrated Google Maps API to display optimal viewing spots along line of totality.",
+      "Used Flask to serve backend API endpoints.",
+    ],
     technologies: ["React(JS)", "Node.js", "Python", "Flask", "GoogleMaps API"],
     repo_link: "https://github.com/AustinFWK/hackysu-2024",
     repo_owner: "AustinFWK",
@@ -49,7 +60,11 @@ export const projects: project[] = [
     svgIcon: SmartToyIcon,
     title: "Valorant Patch Notes Discord Bot",
     description:
-      "I developed a discord bot that automatically scrapes the Valorant patchnotes page and posts them in a designated discord channel whenever a new patch is released.",
+      "Developed a discord bot that automatically tracks and scrapes the Valorant patchnotes page and posts them in a designated discord channel whenever a new patch is released.",
+    bullet_points: [
+      "Implemented web scraping using BeautifulSoup4 and Selenium to extract patch notes from the Valorant website.",
+      "Created a Discord bot using Discord.py to post updates in real-time to a specified channel.",
+    ],
     technologies: ["Python", "Discord.py", "BeautifulSoup4", "Selenium"],
     repo_link: "https://github.com/AustinFWK/valorant-news-bot",
     repo_owner: "AustinFWK",

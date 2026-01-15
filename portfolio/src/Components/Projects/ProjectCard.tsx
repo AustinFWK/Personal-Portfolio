@@ -5,6 +5,8 @@ import {
   CardContent,
   IconButton,
   Icon,
+  Chip,
+  Stack,
 } from "@mui/material";
 import type { project } from "../../Data/project";
 import { LatestCommit } from "../../Utils/getLastCommit";
@@ -19,6 +21,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     svgIcon,
     title,
     description,
+    bullet_points,
     technologies,
     repo_owner,
     repo_name,
@@ -26,7 +29,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   } = project;
 
   return (
-    <Card sx={{ maxWidth: 400, marginBottom: "2rem" }}>
+    <Card sx={{ maxWidth: 420, marginBottom: "2rem" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Icon
           component={svgIcon}
@@ -46,17 +49,62 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             flexDirection: "column",
             alignItems: "center",
             textAlign: "center",
+            gap: 2.5,
           }}
         >
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          <Typography
+            variant="body2"
+            sx={{
+              mt: 1,
+              color: "text.secondary",
+              maxWidth: "45ch",
+              lineHeight: 1.7,
+            }}
+          >
             {description}
           </Typography>
-          <Typography variant="h6" component="div">
-            {technologies.join(", ")}
-          </Typography>
+          <Box
+            component="ul"
+            sx={{ m: 0, pl: 2, textAlign: "left", listStyleType: "disc" }}
+          >
+            {bullet_points.map((point, index) => (
+              <Typography
+                component="li"
+                variant="body2"
+                key={index}
+                sx={{
+                  color: "text.secondary",
+                  mb: 1,
+                  mt: 2,
+                  lineHeight: 1.7,
+                  fontSize: "0.9rem",
+                  letterSpacing: "0.5px",
+                }}
+              >
+                {point}
+              </Typography>
+            ))}
+          </Box>
+          <Stack
+            direction="row"
+            flexWrap="wrap"
+            justifyContent="center"
+            gap={1}
+            sx={{ mt: 2 }}
+          >
+            {technologies.map((tech) => (
+              <Chip
+                onClick={() => {}}
+                key={tech}
+                label={tech}
+                size="medium"
+                variant="outlined"
+              />
+            ))}
+          </Stack>
           <Typography>
             <LatestCommit username={repo_owner} repo={repo_name} />
           </Typography>

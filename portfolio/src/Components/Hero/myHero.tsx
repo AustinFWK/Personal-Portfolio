@@ -34,17 +34,28 @@ export default function MyHero() {
 
         {/* Text */}
         <Stack spacing={3} alignItems={{ xs: "center", md: "flex-start" }}>
-          <Typography variant="h2">
+          <Typography
+            variant="h2"
+            sx={{ textAlign: { xs: "center", md: "left" } }}
+          >
             Hello! I&apos;m Austin Winger-Kailer
           </Typography>
 
-          <Typography variant="h5" color="text.secondary">
+          <Typography
+            variant="h5"
+            color="text.secondary"
+            sx={{ textAlign: { xs: "center", md: "left" } }}
+          >
             I&apos;m a Full Stack Web Developer based out of Youngstown, Ohio. I
             love to build projects from the ground up and slowly watch them
             piece together into something special.
           </Typography>
 
-          <Typography variant="h6" color="text.secondary">
+          <Typography
+            variant="h6"
+            color="text.secondary"
+            sx={{ textAlign: { xs: "center", md: "left" } }}
+          >
             When I&apos;m not working, I enjoy spending my time on personal
             projects, playing video games when time permits, and collecting
             Pokémon cards!
