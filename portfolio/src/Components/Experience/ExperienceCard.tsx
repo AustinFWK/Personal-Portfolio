@@ -12,13 +12,28 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
     title,
     dateRange,
     description,
+    bullet_points,
     svgIcon,
     secondarySvgIcon,
   } = experience;
 
   return (
-    <Card sx={{ maxWidth: 400, marginBottom: "2rem" }}>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+    <Card
+      sx={{
+        maxWidth: 420,
+        mb: "2rem",
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          gap: 2,
+          py: 2,
+          borderBottom: "1px solid",
+          borderColor: "divider",
+        }}
+      >
         <img
           src={svgIcon}
           alt={`${organization} logo`}
@@ -28,66 +43,80 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             marginLeft: "auto",
             marginRight: "auto",
             marginTop: "1rem",
+            marginBottom: "1rem",
           }}
         />
         {secondarySvgIcon && (
           <img
             src={secondarySvgIcon}
-            alt={`${organization} secondary logo`}
+            alt="Secondary logo"
             style={{
-              height: "25%",
-              width: "25%",
+              height: "21%",
+              width: "21%",
               marginLeft: "auto",
               marginRight: "auto",
               marginTop: "1rem",
+              marginBottom: "1rem",
             }}
           />
         )}
       </Box>
+
       <CardContent>
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            textAlign: "center",
+            alignItems: "flex-start",
+            gap: 0.5,
           }}
         >
           <Typography
-            gutterBottom
-            variant="h4"
-            component={organization_url ? "a" : "h4"}
+            variant="subtitle1"
+            fontWeight={600}
+            component={organization_url ? "a" : "div"}
             href={organization_url}
-            target={organization_url ? "_blank" : undefined}
-            rel={organization_url ? "noopener noreferrer" : undefined}
-            sx={{
-              textDecoration: "none",
-              color: "inherit",
-              fontWeight: 600,
-              "&:hover": organization_url
-                ? { textDecoration: "underline" }
-                : undefined,
-            }}
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ textDecoration: "none", color: "inherit" }}
           >
             {organization}
           </Typography>
-          <Typography gutterBottom variant="h5" component="div">
+
+          <Typography variant="body1" fontWeight={500}>
             {title}
           </Typography>
-          <Typography
-            gutterBottom
-            variant="caption"
-            component="div"
-            fontSize={15}
-          >
+
+          <Typography variant="caption" color="text.secondary">
             {dateRange}
           </Typography>
+
           <Typography
             variant="body2"
-            sx={{ color: "text.secondary", fontSize: 16 }}
+            sx={{
+              mt: 1,
+              color: "text.secondary",
+              maxWidth: "45ch",
+              lineHeight: 1.6,
+            }}
           >
             {description}
           </Typography>
+          <Box
+            component="ul"
+            sx={{ m: 0, pl: 2, textAlign: "left", listStyleType: "disc" }}
+          >
+            {bullet_points.map((point, index) => (
+              <Typography
+                component="li"
+                variant="body2"
+                key={index}
+                sx={{ color: "text.secondary", mb: 0.5, mt: 1 }}
+              >
+                {point}
+              </Typography>
+            ))}
+          </Box>
         </Box>
       </CardContent>
     </Card>
