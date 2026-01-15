@@ -48,12 +48,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             flexDirection: "column",
             alignItems: "center",
             textAlign: "center",
+            gap: 2.5,
           }}
         >
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          <Typography
+            variant="body2"
+            sx={{
+              mt: 1,
+              color: "text.secondary",
+              maxWidth: "45ch",
+              lineHeight: 1.7,
+            }}
+          >
             {description}
           </Typography>
           <Stack
