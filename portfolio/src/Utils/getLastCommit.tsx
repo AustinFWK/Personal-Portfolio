@@ -30,28 +30,49 @@ export function LatestCommit({ username, repo }: LatestCommitProps) {
 
   useEffect(() => {
     async function fetchLatestCommit() {
+      const cacheKey = `latestCommit_${username}_${repo}`;
+      const cached = localStorage.getItem(cacheKey);
+
+      // use cache data if it's less than 1 hour old, helps reduce GitHub API calls
+      if (cached) {
+        const { data, timestamp } = JSON.parse(cached);
+        if (Date.now() - timestamp < 3600000) {
+          // 1 hour cache
+          setCommit(data);
+          setLoading(false);
+          return;
+        }
+      }
+
       try {
         const res = await fetch(
           `https://api.github.com/repos/${username}/${repo}/commits`
         );
 
+        // if cache data exists, use it on error
         if (!res.ok) {
-          setError(`Error: ${res.status} ${res.statusText}`);
+          if (cached) {
+            setCommit(JSON.parse(cached).data);
+          }
           setLoading(false);
+          setError(`Error: ${res.status} ${res.statusText}`);
           return;
         }
 
         const data = (await res.json()) as GitHubCommit[];
-        if (!data.length) {
-          setError("No commits found.");
-          setLoading(false);
-          return;
+        if (data.length) {
+          setCommit(data[0]);
+          localStorage.setItem(
+            cacheKey,
+            JSON.stringify({ data: data[0], timestamp: Date.now() })
+          );
         }
-
-        setCommit(data[0]);
       } catch (e) {
         console.error(e);
-        setError("Failed to load latest commit.");
+
+        if (cached) {
+          setCommit(JSON.parse(cached).data);
+        }
       } finally {
         setLoading(false);
       }
