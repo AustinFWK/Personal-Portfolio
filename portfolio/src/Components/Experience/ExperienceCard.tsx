@@ -111,7 +111,14 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                 component="li"
                 variant="body2"
                 key={index}
-                sx={{ color: "text.secondary", mb: 0.5, mt: 1 }}
+                sx={{
+                  color: "text.secondary",
+                  mb: 1,
+                  mt: 2,
+                  lineHeight: 1.7,
+                  fontSize: "0.9rem",
+                  letterSpacing: "0.5px",
+                }}
               >
                 {point}
               </Typography>
