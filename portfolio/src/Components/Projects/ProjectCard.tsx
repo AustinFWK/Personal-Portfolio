@@ -21,6 +21,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     svgIcon,
     title,
     description,
+    bullet_points,
     technologies,
     repo_owner,
     repo_name,
@@ -65,6 +66,28 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           >
             {description}
           </Typography>
+          <Box
+            component="ul"
+            sx={{ m: 0, pl: 2, textAlign: "left", listStyleType: "disc" }}
+          >
+            {bullet_points.map((point, index) => (
+              <Typography
+                component="li"
+                variant="body2"
+                key={index}
+                sx={{
+                  color: "text.secondary",
+                  mb: 1,
+                  mt: 2,
+                  lineHeight: 1.7,
+                  fontSize: "0.9rem",
+                  letterSpacing: "0.5px",
+                }}
+              >
+                {point}
+              </Typography>
+            ))}
+          </Box>
           <Stack
             direction="row"
             flexWrap="wrap"
