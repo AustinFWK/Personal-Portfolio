@@ -21,6 +21,18 @@ export default function NavBar() {
         }}
       >
         <Typography
+          sx={{
+            marginRight: "auto",
+            flex: "0 0 auto",
+            fontSize: "1.1rem",
+            fontWeight: 600,
+          }}
+          component="a"
+          href="#hero"
+        >
+          Austin Winger-Kailer
+        </Typography>
+        <Typography
           sx={{ marginLeft: "1rem", fontSize: "1.1rem", fontWeight: 600 }}
           component="a"
           href="#tech-skills"
