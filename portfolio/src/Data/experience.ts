@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
   },
 
   {
-    organization: "Youngstown State University",
+    organization: "The Data Mine",
     organization_url: "https://ysu.edu/",
     title: "Undergraduate Researcher",
     dateRange: "August 2024 - May 2025",
