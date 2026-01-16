@@ -3,7 +3,7 @@ import SmartToyIcon from "@mui/icons-material/SmartToy";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import type { SvgIconComponent } from "@mui/icons-material";
 
-export type project = {
+export type Project = {
   svgIcon: SvgIconComponent;
   title: string;
   description: string;
@@ -15,7 +15,7 @@ export type project = {
   demo_video?: string;
 };
 
-export const projects: project[] = [
+export const projects: Project[] = [
   {
     svgIcon: PsychologyIcon,
     title: "Habit Tracker",

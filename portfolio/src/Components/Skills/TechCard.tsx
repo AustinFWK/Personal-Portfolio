@@ -1,8 +1,8 @@
 import { Card, CardContent, Typography, Box, Tooltip } from "@mui/material";
-import type { skills } from "../../Data/skills";
+import type { Skills } from "../../Data/skills";
 
 interface TechCardProps {
-  skill: skills;
+  skill: Skills;
 }
 
 export default function TechCard({ skill }: TechCardProps) {

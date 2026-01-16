@@ -1,8 +1,8 @@
 import { Typography, Box, Card, CardContent } from "@mui/material";
-import type { experience } from "../../Data/experience";
+import type { Experience } from "../../Data/experience";
 
 interface ExperienceCardProps {
-  experience: experience;
+  experience: Experience;
 }
 
 export default function ExperienceCard({ experience }: ExperienceCardProps) {

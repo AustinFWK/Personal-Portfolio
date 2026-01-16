@@ -1,4 +1,4 @@
-export type experience = {
+export type Experience = {
   organization: string;
   organization_url?: string;
   title: string;
@@ -9,7 +9,7 @@ export type experience = {
   secondarySvgIcon?: string;
 };
 
-export const experiences: experience[] = [
+export const experiences: Experience[] = [
   {
     organization: "DevYoungstown",
     organization_url: "https://www.youngstown.dev/",
