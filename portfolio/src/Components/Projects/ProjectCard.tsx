@@ -8,12 +8,12 @@ import {
   Chip,
   Stack,
 } from "@mui/material";
-import type { project } from "../../Data/project";
+import type { Project } from "../../Data/project";
 import { LatestCommit } from "../../Utils/getLastCommit";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 interface ProjectCardProps {
-  project: project;
+  project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {

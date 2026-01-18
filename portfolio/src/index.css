@@ -75,26 +75,6 @@ button:focus-visible {
   align-items: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #0f172a;
-    background-color: #f8fafc;
-  }
-  a {
-    color: #2563eb;
-  }
-  a:hover {
-    color: #3b82f6;
-  }
-  button {
-    background-color: #3b82f6;
-    color: #ffffff;
-  }
-  button:hover {
-    background-color: #2563eb;
-  }
-}
-
 .card-layout {
   margin: 0 auto;
   padding: 0 1rem;

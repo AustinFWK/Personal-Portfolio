@@ -1,12 +1,12 @@
 import "./index.css";
 import MyProjects from "./Components/Projects/myProjects.tsx";
 import MyHero from "./Components/Hero/myHero.tsx";
-import NavBar from "./Components/Nav/navBar.tsx";
 import { Fade } from "@mui/material";
 import { useState, useEffect } from "react";
 import MySkills from "./Components/Skills/techSkills.tsx";
 import MyExperiences from "./Components/Experience/MyExperiences.tsx";
 import Footer from "./Components/Footer/Footer.tsx";
+import NavigationBar from "./Components/Nav/NavigationBar.tsx";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -23,7 +23,7 @@ function App() {
         gap: "4rem",
       }}
     >
-      <NavBar />
+      <NavigationBar />
       <Fade
         in={loaded}
         timeout={600}

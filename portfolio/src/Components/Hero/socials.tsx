@@ -24,7 +24,7 @@ export default function Socials() {
       </IconButton>
       <IconButton
         component="a"
-        href="https://github.com/AustinFWK/HabitTracker"
+        href="https://github.com/AustinFWK"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"

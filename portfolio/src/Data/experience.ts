@@ -1,4 +1,4 @@
-export type experience = {
+export type Experience = {
   organization: string;
   organization_url?: string;
   title: string;
@@ -9,7 +9,7 @@ export type experience = {
   secondarySvgIcon?: string;
 };
 
-export const experiences: experience[] = [
+export const experiences: Experience[] = [
   {
     organization: "DevYoungstown",
     organization_url: "https://www.youngstown.dev/",
@@ -40,8 +40,8 @@ export const experiences: experience[] = [
   },
 
   {
-    organization: "Youngstown State University",
-    organization_url: "https://ysu.edu/",
+    organization: "The Data Mine",
+    organization_url: "https://tdm.ysumathstat.org/",
     title: "Undergraduate Researcher",
     dateRange: "August 2024 - May 2025",
     description:

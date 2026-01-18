@@ -23,12 +23,12 @@ export type SkillIcon = {
   tooltip: string;
 };
 
-export type skills = {
+export type Skills = {
   category: string;
   icons: SkillIcon[];
 };
 
-export const skillsData: skills[] = [
+export const skillsData: Skills[] = [
   {
     category: "Frontend",
     icons: [

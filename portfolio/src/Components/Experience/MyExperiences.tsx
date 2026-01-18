@@ -14,7 +14,7 @@ export default function MyExperiences() {
       </Typography>
       <div className="card-layout">
         {experiences.map((exp) => (
-          <ExperienceCard experience={exp} />
+          <ExperienceCard experience={exp} key={exp.organization} />
         ))}
       </div>
     </section>
