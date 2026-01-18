@@ -5,7 +5,6 @@ export type NavbarItem = {
 };
 
 export const navbarItems: NavbarItem[] = [
-  { label: "Austin Winger-Kailer", href: "#hero" },
   { label: "Skills", href: "#tech-skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },

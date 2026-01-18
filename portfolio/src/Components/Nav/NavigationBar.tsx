@@ -1,6 +1,6 @@
 import NavBar from "./navBarLayout.tsx";
 import { navbarItems } from "../../Data/navbar";
-import Box from "@mui/material/Box";
+import { Typography, Box } from "@mui/material";
 
 export default function NavigationBar() {
   return (
@@ -22,6 +22,13 @@ export default function NavigationBar() {
           py: 2,
         }}
       >
+        <Typography
+          sx={{ marginRight: "auto", fontSize: "1.1rem", fontWeight: 600 }}
+          component="a"
+          href="#hero"
+        >
+          Austin Winger-Kailer
+        </Typography>
         {navbarItems.map((item) => (
           <NavBar items={item} key={item.label} />
         ))}
