@@ -1,8 +1,13 @@
 import NavBar from "./navBarLayout.tsx";
 import { navbarItems } from "../../Data/navbar";
 import { Typography, Box } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useState } from "react";
 
 export default function NavigationBar() {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+
   return (
     <Box
       component="nav"
