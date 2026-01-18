@@ -49,7 +49,7 @@ export default function NavigationBar() {
         {/* Dropdown menu - controlled by anchorEl */}
         <Menu anchorEl={anchorEl} open={open} onClose={handleMenuClose}>
           <MenuItem component="a" href="#hero" onClick={handleMenuClose}>
-            Austin Winger-Kailer
+            About
           </MenuItem>
           {navbarItems.map((link) => (
             <MenuItem
