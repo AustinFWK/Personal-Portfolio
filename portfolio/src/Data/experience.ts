@@ -41,7 +41,7 @@ export const experiences: Experience[] = [
 
   {
     organization: "The Data Mine",
-    organization_url: "https://ysu.edu/",
+    organization_url: "https://tdm.ysumathstat.org/",
     title: "Undergraduate Researcher",
     dateRange: "August 2024 - May 2025",
     description:
