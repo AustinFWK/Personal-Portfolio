@@ -26,6 +26,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     repo_owner,
     repo_name,
     repo_link,
+    project_url,
   } = project;
 
   return (
@@ -52,7 +53,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             gap: 2.5,
           }}
         >
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component={project_url ? "a" : "div"}
+            href={project_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ textDecoration: "none", color: "inherit" }}
+          >
             {title}
           </Typography>
           <Typography

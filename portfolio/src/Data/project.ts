@@ -13,6 +13,7 @@ export type Project = {
   repo_owner: string;
   repo_name: string;
   demo_video?: string;
+  project_url?: string;
 };
 
 export const projects: Project[] = [
@@ -58,16 +59,18 @@ export const projects: Project[] = [
 
   {
     svgIcon: SmartToyIcon,
-    title: "Valorant Patch Notes Discord Bot",
+    title: "Patchy",
     description:
       "Developed a discord bot that automatically tracks and scrapes the Valorant patchnotes page and posts them in a designated discord channel whenever a new patch is released.",
     bullet_points: [
       "Implemented web scraping using BeautifulSoup4 and Selenium to extract patch notes from the Valorant website.",
-      "Created a Discord bot using Discord.py to post updates in real-time to a specified channel.",
+      "Engineered change detection logic to track when a new patch is released.",
+      "Built a React + Tailwind based landing page that provides information about the bot and allows users to invite it to their own servers.",
     ],
-    technologies: ["Python", "Discord.py", "BeautifulSoup4", "Selenium"],
+    technologies: ["Python", "React", "Discord.py", "Ubuntu VM", "Selenium"],
     repo_link: "https://github.com/AustinFWK/valorant-news-bot",
     repo_owner: "AustinFWK",
     repo_name: "valorant-news-bot",
+    project_url: "https://patchyonline.xyz/",
   },
 ];
