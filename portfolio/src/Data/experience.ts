@@ -63,7 +63,7 @@ export const experiences: Experience[] = [
     description:
       "As a Freelance Web Developer for Niles Manufacturing & Finishing, I rebuilt their legacy PHP website as a modern, fast, and easy-to-navigate site!",
     bullet_points: [
-      "Migrated the legacy PHP website to Astro, delivering a modern, simple design with faster page loads.",
+      "Rebuilt the website from the ground up with Astro, replacing the legacy PHP site with a modern, simple design.",
       "Deployed and hosted the site on Cloudflare for reliable performance and global content delivery.",
       "Actively optimizing SEO to improve search visibility and attract new customers.",
     ],
