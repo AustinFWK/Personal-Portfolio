@@ -54,4 +54,19 @@ export const experiences: Experience[] = [
     svgIcon: "YSU.svg",
     secondarySvgIcon: "TA.svg",
   },
+
+  {
+    organization: "Niles Manufacturing & Finishing",
+    organization_url: "https://nilesmfg.com",
+    title: "Freelance Web Developer",
+    dateRange: "May 2026 - October 2026",
+    description:
+      "As a Freelance Web Developer for Niles Manufacturing & Finishing, I rebuilt their legacy PHP website as a modern, fast, and easy-to-navigate site!",
+    bullet_points: [
+      "Migrated the legacy PHP website to Astro, delivering a modern, simple design with faster page loads.",
+      "Deployed and hosted the site on Cloudflare for reliable performance and global content delivery.",
+      "Actively optimizing SEO to improve search visibility and attract new customers.",
+    ],
+    svgIcon: "niles-logo.svg",
+  },
 ];

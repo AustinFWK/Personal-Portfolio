@@ -38,8 +38,10 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           src={svgIcon}
           alt={`${organization} logo`}
           style={{
-            height: "25%",
-            width: "25%",
+            height: "64px",
+            width: "auto",
+            maxWidth: "40%",
+            objectFit: "contain",
             marginLeft: "auto",
             marginRight: "auto",
             marginTop: "1rem",
@@ -51,8 +53,10 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             src={secondarySvgIcon}
             alt="Secondary logo"
             style={{
-              height: "21%",
-              width: "21%",
+              height: "64px",
+              width: "auto",
+              maxWidth: "40%",
+              objectFit: "contain",
               marginLeft: "auto",
               marginRight: "auto",
               marginTop: "1rem",

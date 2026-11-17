@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100">
+  <!-- Temporary placeholder: replace this file with the client's logo once approved. -->
+  <rect x="3" y="3" width="154" height="94" rx="14" fill="#9e9e9e" fill-opacity="0.18" stroke="#9e9e9e" stroke-width="3"/>
+  <text x="80" y="50" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#9e9e9e">NMF</text>
+</svg>
